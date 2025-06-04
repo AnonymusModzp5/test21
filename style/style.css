@@ -1,0 +1,114 @@
+body {
+    background-color: #ffffff; /* sfondo chiaro */
+    color: rgb(0, 0, 0); /* testo nero */
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* HEADER MODERNO
+header {
+    background: linear-gradient(90deg, #004aad, #007bff);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #003366;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+} */
+
+  header {
+      background: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffdd57;
+}
+
+/* ACCORDION */
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+.accordion-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: left;
+    background-color: #0055cc;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-btn:hover {
+    background-color: #ddd;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+}
+
+/* VIDEO */
+.video-medium {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* FOOTER 
+footer {
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #ffffff;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}*/
+
+ header {
+      background: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    
+ footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      font-size: 0.9em;
+    }
