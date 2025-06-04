@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pakete</title>
+  <link rel="stylesheet" href="style/style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 2rem;
+    }
+
+    .sezioni-container {
+      display: flex;
+      justify-content: center;
+      overflow-x: auto;
+      gap: 2rem;
+      padding: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .sezione {
+      flex: 0 1 300px;
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .sezione h3 {
+      color: #0077cc;
+      margin-bottom: 1rem;
+    }
+
+    .pacchetto {
+      background-color: white;
+      padding: 1rem;
+      margin: 1rem 0;
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .pacchetto h4 {
+      margin-top: 0;
+    }
+
+    .pacchetto p {
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+
+    .reservieren-button {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: #0077cc;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .reservieren-button:hover {
+      background-color: #005fa3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #f0f0f0;
+    }
+
+    /* 📱 Mobile responsive */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .sezioni-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+      }
+
+      .sezione {
+        width: 90%;
+        max-width: 100%;
+      }
+
+      main {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>𝕨𝕖𝕓𝕤𝕚𝕥𝕖𝕟𝕒𝕞𝕖 your choice</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pakete.html">Pakete</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Unserem Angeboten</h2>
+    <p>Here you can find the pakets and beest prices!</p>
+
+     <div class="sezioni-container">
+      <!-- Sezione 1 Matrimonio-->
+      <div class="sezione">
+        <h3>Hochzeitsvideos</h3>
+        <div class="pacchetto">
+          <h4>Basispaket</h4>
+          <p>Preis: 1.200 € <br>Leistungen:<br>4 Stunden Aufnahmezeit<br>Highlight-Video (3-5 Minuten)<br>Professionelle Nachbearbeitung<br>Online-Galerie zum Teilen und Download</p>
+          <a href="kontakt.html" class="reservieren-button">Jetzt reservieren</a>
+        </div>
+        <div class="pacchetto">
+          <h4>Premium-Paket</h4>
+          <p>Preis: 2.500 €<br>Leistungen:<br>8 Stunden Aufnahmezeit<br>Highlight-Video (5-7 Minuten)<br>Komplettes Hochzeitsvideo (15-20 Minuten)<br>Drohnenaufnahmen<br>USB-Stick mit allen Videos in HD-Qualität</p>
+          <a href="kontakt.html" class="reservieren-button">Jetzt reservieren</a>
+        </div>
+        <div class="pacchetto">
+          <h4>Deluxe-Paket</h4>
+          <p>Preis: 4.000 €<br>Leistungen:<br>Ganztägige Begleitung (12 Stunden)<br>Highlight-Video (7-10 Minuten)<br>Komplettes Hochzeitsvideo (20-30 Minuten)<br>Drohnenaufnahmen und Kameramann-Team<br>Teaser-Video für Social Media<br>USB-Stick &  Fotobuch mit den schönsten Momenten</p>
+          <a href="kontakt.html" class="reservieren-button">Jetzt reservieren</a>
+        </div>
+      </div>
+
+      <!-- Sezione 2 Businessvideos-->
+      <div class="sezione">
+        <h3>Businessvideos</h3>
+        <div class="pacchetto">
+          <h4>Basispaket</h4>
+          <p>Preis: 1.500 €<br>Leistungen:3 Stunden Aufnahmezeit<br>Unternehmensprofil-Video (2-3 Minuten)<br>Professionelle Nachbearbeitung<br>Einbindung von Grafiken und Texten</p>
+          <a href="kontakt.html" class="reservieren-button">Jetzt reservieren</a>
+        </div>
+        <div class="pacchetto">
+          <h4>Premium-Paket</h4>
+          <p>Preis: 3.000 €<br>Leistungen:6 Stunden Aufnahmezeit<br>Imagefilm (3-5 Minuten)<br>Interviews und Kundenstimmen<br>Drohnenaufnahmen<br>Zwei Videos in unterschiedlichen Längen (Kurzversion für Social Media)<br></p>
+          <a href="kontakt.html" class="reservieren-button">Jetzt reservieren</a>
+        </div>
+        <div class="pacchetto">
+          <h4>Deluxe-Paket</h4>
+          <p>Preis: 5.500 €<br>Leistungen:<br>Ganztägige Produktion<br>Imagefilm (5-7 Minuten)<br>Werbespots (15-30 Sekunden)<br>Drohnenaufnahmen, Animationen und Effekte<br>Videovarianten für unterschiedliche Plattformen (z.B. YouTube, Instagram)</p>
+          <a href="kontakt.html" class="reservieren-button">Jetzt reservieren</a>
+        </div>
+      </div>
+
+      <!-- Sezione Familienvideos 3 -->
+      <div class="sezione">
+        <h3>Familienvideos</h3>
+        <div class="pacchetto">
+          <h4>Basispaket</h4>
+          <p>Preis: 800 €<br>Leistungen:<br>2 Stunden Aufnahmezeit<br>Familienporträt-Video (2-3 Minuten)<br>Professionelle Nachbearbeitung<br>Online-Galerie zum Teilen</p>
+          <a href="kontakt.html" class="reservieren-button">Jetzt reservieren</a>
+        </div>
+        <div class="pacchetto">
+          <h4>Premium-Paket</h4>
+          <p>Preis: 1.500 €<br>Leistungen:4 Stunden Aufnahmezeit<br>Familiengeschichte-Video (3-5 Minuten)<br>Drohnenaufnahmen<br>USB-Stick mit allen Videos in HD-Qualität</p>
+          <a href="kontakt.html" class="reservieren-button">Jetzt reservieren</a>
+        </div>
+        <div class="pacchetto">
+          <h4>Deluxe-Paket</h4>
+          <p>Preis: 2.800 €<br>Leistungen:<br>Ganztägige Begleitung<br>Familienfilm (7-10 Minuten)<br>Drohnenaufnahmen und Kameramann-Team<br>USB-Stick & Fotobuch mit den schönsten Momenten<br>Teaser-Video für Social Media</p>
+          <a href="kontakt.html" class="reservieren-button">Jetzt reservieren</a>
+        </div>
+      </div>
+
+      <!-- Sezione Sportlervideos 4 -->
+      <div class="sezione">
+        <h3>Sportlervideos</h3>
+        <div class="pacchetto">
+          <h4>Basispaket</h4>
+          <p>Preis: 1.800 €<br>Leistungen:<br>3 Stunden Aufnahmezeit<br>Imagefilm (2-3 Minuten)<br>Professionelle Nachbearbeitung<br>Einbindung von Musik und Grundeffekten<br>Bereitstellung des Videos in HD-Qualität</p>
+          <a href="kontakt.html" class="reservieren-button">Jetzt reservieren</a>
+        </div>
+        <div class="pacchetto">
+          <h4>Premium-Paket</h4>
+          <p>Preis: 3.500 €<br>Leistungen:<br>6 Stunden Aufnahmezeit<br>Imagefilm (3-5 Minuten)<br>Drohnenaufnahmen<br>Interviews und Voiceover<br>Professionelle Farbkorrektur und Spezialeffekte<br>Videoversionen für verschiedene Plattformen (z.B. Instagram, YouTube)<br>USB-Stick mit allen Videoaufnahmen in HD-Qualität</p>
+          <a href="kontakt.html" class="reservieren-button">Jetzt reservieren</a>
+        </div>
+        <div class="pacchetto">
+          <h4>Deluxe-Paket</h4>
+          <p>Preis: 6.000 €<br>Leistungen:<br>Ganztägige Produktion (bis zu 10 Stunden)<br>Imagefilm (5-7 Minuten)<br>Drohnenaufnahmen und Multi-Kamera-Setup<br>Interviews, Voiceover, und umfassende Nachbearbeitung<br>Animierte Grafiken und personalisierte Effekte<br>Teaser-Video für Social Media<br>USB-Stick mit allen Videoaufnahmen in 4K-Qualität</p>
+          <a href="kontakt.html" class="reservieren-button">Jetzt reservieren</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <footer>
+    <p>&copy; 2023 - Tutti i diritti riservati</p>
+  </footer>
+</body>
+</html>

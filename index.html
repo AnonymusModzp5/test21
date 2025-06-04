@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="style/style.css">
+  
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0.5rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    h2, h3 {
+      text-align: center;
+    }
+
+    .about-section {
+      max-width: 960px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-section p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    .gallery-section {
+      text-align: center;
+      margin: 50px auto;
+      overflow: hidden;
+      max-width: 960px;
+    }
+
+    .slideshow-container {
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .slideshow-track {
+      display: flex;
+      width: max-content;
+      animation: slide 15s linear infinite;
+    }
+
+    .slideshow-track img {
+      width: 80vw;
+      max-width: 300px;
+      height: auto;
+      border-radius: 12px;
+      margin-right: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      flex-shrink: 0;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-930px); }
+    }
+
+    .video-section {
+      padding: 20px;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    .accordion-item {
+      margin-bottom: 10px;
+    }
+
+    .accordion-btn {
+      width: 100%;
+      padding: 10px;
+      font-size: 1.1em;
+      text-align: left;
+      border: none;
+      background: #e0e0e0;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+
+    .accordion-content {
+      display: none;
+      padding: 10px;
+    }
+
+    .video-medium {
+      width: 100%;
+      max-width: 100%;
+      height: 315px;
+      display: block;
+      margin: 0 auto 10px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      .about-section p {
+        font-size: 1em;
+        padding: 0 10px;
+      }
+
+      .slideshow-track {
+        animation: none;
+      }
+
+      .accordion-btn {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>𝕨𝕖𝕓𝕤𝕚𝕥𝕖𝕟𝕒𝕞𝕖 your choice</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pakete.html">Pakete</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Mit Leidenschaft für das Erzählen von Geschichten...</h2>
+
+    <!-- Sezione Chi Sono -->
+    <section class="about-section">
+      <h3>über mich</h3>
+      <p>Mit Leidenschaft für das Erzählen von Geschichten und einem Auge für das Wesentliche<br>
+habe ich mich darauf spezialisiert, einzigartige Videos zu kreieren, die bewegen und<br>
+begeistern. Als erfahrene Produzentin biete ich Ihnen umfassendes Know-how in der<br>
+Erstellung von Werbe-, Familien- und Hochzeitsvideos, die durch Qualität und Kreativität
+überzeugen.<br>
+Meine Mission: Ich sorge dafür, dass Ihre Erinnerungen und Botschaften in eindrucksvollen<br>
+Videos lebendig werden – individuell, professionell und mit viel Herz. Vertrauen Sie auf<br>
+meine Erfahrung und lassen Sie uns gemeinsam etwas Einzigartiges schaffen.</p>
+    </section>
+
+    <!-- Galleria Fotografica -->
+    <section class="gallery-section">
+      <h3>𝔾𝕒𝕝𝕖𝕣𝕚𝕖</h3>
+      <div class="slideshow-container">
+        <div class="slideshow-track">
+          <img src="images/foto1.jpg" alt="Galerie Foto 1" />
+          <img src="images/foto2.jpg" alt="Galerie Foto 2" />
+          <img src="images/foto3.jpg" alt="Galerie Foto 3" />
+          <img src="images/foto1.jpg" alt="Galerie Foto 1 clone" />
+          <img src="images/foto2.jpg" alt="Galerie Foto 2 clone" />
+          <img src="images/foto3.jpg" alt="Galerie Foto 3 clone" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Sezione Video -->
+    <section class="video-section">
+      <h3>𝕄𝕖𝕕𝕚𝕒</h3>
+
+      <div class="accordion-item">
+        <button class="accordion-btn">Hochzeit</button>
+        <div class="accordion-content">
+          <iframe class="video-medium" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+          <p>Familienmomente für die Ewigkeit...</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-btn">Business</button>
+        <div class="accordion-content">
+          <iframe class="video-medium" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+          <p>Setzen Sie Ihr Unternehmen professionell in Szene...</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-btn">Sport</button>
+        <div class="accordion-content">
+          <iframe class="video-medium" src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+          <p>Leidenschaft, Leistung, Persönlichkeit...</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-btn">Emotion Familie</button>
+        <div class="accordion-content">
+          <iframe class="video-medium" src="https://www.youtube.com/embed/VIDEO_ID_4" frameborder="0" allowfullscreen></iframe>
+          <p>Bewahren Sie Ihre schönsten Erinnerungen...</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Copyright © 2023</p>
+  </footer>
+
+  <script>
+    const buttons = document.querySelectorAll('.accordion-btn');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const content = btn.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+</body>
+</html>
